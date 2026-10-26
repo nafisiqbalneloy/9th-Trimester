@@ -1,0 +1,14 @@
+void setup()
+{
+	Serial.begin(9600);
+}
+
+void loop()
+{
+	if(Serial.available()>0)
+	{
+		String s = Serial.readString(); // read a single 'string'
+		Serial.print("Reply from Arduino: ");// Serial.print() prints in the same line
+		Serial.println(s); //Serial.println() prints in a new line
+	}
+}

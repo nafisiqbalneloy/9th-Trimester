@@ -1,0 +1,14 @@
+void setup()
+{
+	Serial.begin(9600); // used to initialize the communication between the Arduino
+			    //board and a computer or other devices via the serial communication interface.Baud
+			   //rate is the number of bits transmitted per second and determines how fast data is
+			   //sent and received. 9600 here is baud rate.
+}
+
+void loop()
+{
+	Serial.println("Hello from Arduino !!! ");
+	//prints Hello from Arduino!! In serial monitor
+	delay(300); // a delay of 300 ms
+}
